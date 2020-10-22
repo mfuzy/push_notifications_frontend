@@ -1,3 +1,12 @@
+// handle click event on button
+const inp = document.getElementById("inp");
+
+inp.addEventListener("click", function (e) {
+  fetch("http://localhost:5000/send-notification/");
+});
+
+//========================================
+
 if ("serviceWorker" in navigator) {
   // SW registration:
   navigator.serviceWorker
